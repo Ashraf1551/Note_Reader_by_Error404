@@ -53,4 +53,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 
+android:ems="10"
+			android:hint="Book Author"
+			android:inputType="textMultiLine"
+			android:layout_below="@id/abl1"
+			android:layout_above="@id/ll1"
 
