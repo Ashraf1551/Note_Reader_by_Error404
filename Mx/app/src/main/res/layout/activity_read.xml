@@ -74,3 +74,10 @@ android:gravity="top"
 		android:id="@+id/ll2"
 		android:gravity="center">
 
+
+<ImageButton
+			android:id="@+id/stop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/stop"/>
+
