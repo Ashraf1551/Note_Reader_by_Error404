@@ -27,3 +27,23 @@ public class DebugActivity extends Activity {
         super.onCreate(savedInstanceState);
 
 
+		Intent intent = getIntent();
+		String errMsg = "";
+		String madeErrMsg = "";
+		if(intent != null){
+			errMsg = intent.getStringExtra("error");
+
+			String[] spilt = errMsg.split("\n");
+			//errMsg = spilt[0];
+			try {
+				for (int j = 0; j < exceptionType.length; j++) {
+					if (spilt[0].contains(exceptionType[j])) {
+						madeErrMsg = errMessage[j];
+
+						int addIndex = spilt[0].indexOf(exceptionType[j]) + exceptionType[j].length();
+
+						madeErrMsg += spilt[0].substring(addIndex, spilt[0].length());
+						break;
+
+					}
+				}
