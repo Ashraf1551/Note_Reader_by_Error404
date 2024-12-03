@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -8,3 +9,15 @@
     	<item name="colorControlHighlight">@color/colorControlHighlight</item>
     </style>
 </resources>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+    	<item name="colorControlHighlight">@color/colorControlHighlight</item>
+    </style>
+</resources>
+>>>>>>> 127f6638a665760f57bf9364aae423fc8299d2ec
