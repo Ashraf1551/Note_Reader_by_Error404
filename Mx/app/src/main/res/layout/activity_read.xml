@@ -39,3 +39,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 			android:background="?attr/colorPrimary"
 			android:gravity="center">
 
+
+<ImageButton
+				android:id="@+id/speak"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/speaker"/>
+
