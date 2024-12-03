@@ -40,3 +40,24 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_below="@id/activitymainAppBarLayout1"/>
+		<ImageView
+		android:id="@+id/empty_imageview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="230dp"
+		android:alpha="0.1"
+		android:visibility="gone"
+		app:srcCompat="@drawable/book_logo"
+		android:layout_centerInParent="true"/>
+
+	<TextView
+		android:id="@+id/no_data"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="No Data."
+		android:textSize="20sp"
+		android:alpha="0.4"
+		android:visibility="gone"
+		android:layout_below="@+id/empty_imageview"
+		android:layout_centerHorizontal="true"/>
