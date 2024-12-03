@@ -59,3 +59,9 @@ android:ems="10"
 			android:layout_below="@id/abl1"
 			android:layout_above="@id/ll1"
 
+android:gravity="top"
+			android:background="@android:color/transparent"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"/>
+
+
