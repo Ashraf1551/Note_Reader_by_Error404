@@ -81,3 +81,11 @@ android:gravity="top"
 			android:layout_height="wrap_content"
 			android:src="@drawable/stop"/>
 
+
+<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Reading....."
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginTop="15dp"
+			android:textColor="?attr/colorPrimary"/>
