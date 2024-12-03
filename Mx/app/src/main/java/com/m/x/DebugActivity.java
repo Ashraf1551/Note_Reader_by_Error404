@@ -47,3 +47,24 @@ public class DebugActivity extends Activity {
 
 					}
 				}
+
+				if(madeErrMsg.isEmpty()) madeErrMsg = errMsg;
+			}catch(Exception e){}
+
+		}
+
+        AlertDialog.Builder bld = new AlertDialog.Builder(this);
+
+		bld.setTitle("An error occured");
+		bld.setMessage( madeErrMsg );
+		bld.setNeutralButton("End Application", new DialogInterface.OnClickListener() {
+
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				finish();
+			}
+		});
+		bld.create().show();
+
+    }
+}
