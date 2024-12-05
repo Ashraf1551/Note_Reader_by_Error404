@@ -68,3 +68,9 @@ public boolean onCreateOptionsMenu(Menu menu) {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+	protected void onPause()
+	{
+		// TODO: Implement this method
+		super.onPause();
+	}
