@@ -55,3 +55,16 @@ public boolean onCreateOptionsMenu(Menu menu) {
         int id = item.getItemId();
 
 
+
+         //noinspection SimplifiableIfStatement
+         if (id == R.id.item) {
+            DatabaseHelper myDB = new DatabaseHelper(AddActivity.this);
+			myDB.addBook(title_input.getText().toString().trim(),
+						 author_input.getText().toString().trim());
+			startActivity(new Intent(AddActivity.this, MainActivity.class));
+			finish();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
