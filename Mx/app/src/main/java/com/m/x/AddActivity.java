@@ -37,3 +37,7 @@ public class AddActivity extends AppCompatActivity {
 
 		iad.loadAd(adrequest);
 
+        title_input = findViewById(R.id.title_input);
+        author_input = findViewById(R.id.author_input);
+    }
+
