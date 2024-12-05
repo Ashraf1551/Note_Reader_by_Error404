@@ -22,3 +22,9 @@ public class AddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+
+
+        toolbar = findViewById(R.id.mainToolbar1);
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setTitle("New Note");
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
