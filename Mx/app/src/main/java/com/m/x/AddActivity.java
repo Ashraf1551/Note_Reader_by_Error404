@@ -10,3 +10,10 @@ import androidx.appcompat.widget.*;
 import android.content.*;
 import android.view.*;
 import com.google.android.gms.ads.*;
+
+
+public class AddActivity extends AppCompatActivity {
+
+	private Toolbar toolbar;
+    EditText title_input, author_input;
+	InterstitialAd iad;
