@@ -74,3 +74,15 @@ public boolean onCreateOptionsMenu(Menu menu) {
 		// TODO: Implement this method
 		super.onPause();
 	}
+
+
+    @Override
+	protected void onResume()
+	{
+		// TODO: Implement this method
+		super.onResume();
+		if(iad.isLoaded()) {
+			iad.show();
+		}
+	}
+}
