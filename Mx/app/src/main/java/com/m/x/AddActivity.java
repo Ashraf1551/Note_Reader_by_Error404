@@ -17,3 +17,8 @@ public class AddActivity extends AppCompatActivity {
 	private Toolbar toolbar;
     EditText title_input, author_input;
 	InterstitialAd iad;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add);
