@@ -28,3 +28,12 @@ public class AddActivity extends AppCompatActivity {
 		setSupportActionBar(toolbar);
 		getSupportActionBar().setTitle("New Note");
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        iad=new InterstitialAd(this);
+		iad.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+
+		AdRequest adrequest=new AdRequest.Builder().build();
+
+		iad.loadAd(adrequest);
+
