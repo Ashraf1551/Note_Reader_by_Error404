@@ -57,3 +57,14 @@ public class ReadActivity extends AppCompatActivity {
 		stop = findViewById(R.id.stop);
 		
 		ll.setVisibility(View.INVISIBLE);
+
+
+        tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() 
+			{
+				@Override
+				public void onInit(int i) {
+					if(i == TextToSpeech.SUCCESS) {
+						int lang = tts.setLanguage(Locale.ENGLISH);
+					}
+				}
+			});
