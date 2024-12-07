@@ -115,3 +115,11 @@ void getAndSetIntentData(){
          title = getIntent().getStringExtra("title");
          author = getIntent().getStringExtra("author");
 
+
+         //Setting Intent Data
+         author_input.setText(author);
+         Log.d("stev", title+" "+author+" ");
+     }else{
+         Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
+     }
+ }
