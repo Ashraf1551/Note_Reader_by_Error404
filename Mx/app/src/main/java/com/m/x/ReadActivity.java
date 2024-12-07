@@ -20,3 +20,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import com.google.android.gms.ads.*;
 
+
+public class ReadActivity extends AppCompatActivity {
+
+    EditText author_input;
+    String id, title, author;
+	ImageButton speak, stop;
+	TextToSpeech tts;
+	LinearLayout ll;
+	RelativeLayout rl;
+	InterstitialAd iad;
