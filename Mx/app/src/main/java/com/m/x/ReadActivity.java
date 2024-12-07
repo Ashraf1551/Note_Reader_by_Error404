@@ -68,3 +68,13 @@ public class ReadActivity extends AppCompatActivity {
 					}
 				}
 			});
+
+
+             //First we call this
+        getAndSetIntentData();
+
+        //Set actionbar title after getAndSetIntentData method
+        ActionBar ab = getSupportActionBar();
+        if (ab != null) {
+            ab.setTitle(title);
+        }
