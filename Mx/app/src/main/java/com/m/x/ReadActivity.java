@@ -36,3 +36,15 @@ public class ReadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read);
 		
+
+        Toolbar toolbar = findViewById(R.id.mainToolbar2);
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setTitle(title);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		iad=new InterstitialAd(this);
+		iad.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+
+		AdRequest adrequest=new AdRequest.Builder().build();
+
+		iad.loadAd(adrequest);
