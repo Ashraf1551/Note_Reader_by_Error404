@@ -129,3 +129,12 @@ void getAndSetIntentData(){
     builder.setTitle("Delete " + title + " ?");
     builder.setMessage("Are you sure you want to delete " + title + " ?");
     builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+
+
+        @Override
+				public void onClick(DialogInterface dialogInterface, int i) {
+					DatabaseHelper myDB = new DatabaseHelper(ReadActivity.this);
+					myDB.deleteOneRow(id);
+					finish();
+				}
+			});
