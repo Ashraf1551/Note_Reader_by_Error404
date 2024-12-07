@@ -170,3 +170,22 @@ void getAndSetIntentData(){
 			if(iad.isLoaded()) {
 				iad.show();
 			}
+
+            DatabaseHelper myDB = new DatabaseHelper(ReadActivity.this);
+			author = author_input.getText().toString().trim();
+			myDB.updateData(id, title, author);
+        }
+		
+		if(i == R.id.delete) {
+			confirmDialog();
+		}
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+	protected void onResume()
+	{
+		// TODO: Implement this method
+		super.onResume();
+	}
