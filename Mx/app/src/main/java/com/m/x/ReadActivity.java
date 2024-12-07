@@ -78,3 +78,15 @@ public class ReadActivity extends AppCompatActivity {
         if (ab != null) {
             ab.setTitle(title);
         }
+
+
+        speak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s = author_input.getText().toString();
+                tts.speak(s, TextToSpeech.QUEUE_FLUSH, null);
+                ll.setVisibility(View.VISIBLE);
+                author_input.setEnabled(false);
+                speak.setEnabled(false);
+            }
+        });
