@@ -30,3 +30,9 @@ public class ReadActivity extends AppCompatActivity {
 	LinearLayout ll;
 	RelativeLayout rl;
 	InterstitialAd iad;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_read);
+		
