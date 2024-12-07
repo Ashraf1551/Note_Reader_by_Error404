@@ -123,3 +123,9 @@ void getAndSetIntentData(){
          Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
      }
  }
+
+ void confirmDialog(){
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setTitle("Delete " + title + " ?");
+    builder.setMessage("Are you sure you want to delete " + title + " ?");
+    builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
