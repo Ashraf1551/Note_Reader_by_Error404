@@ -104,3 +104,8 @@ public class ReadActivity extends AppCompatActivity {
         });
 
 }
+
+
+void getAndSetIntentData(){
+    if(getIntent().hasExtra("id") && getIntent().hasExtra("title") &&
+       getIntent().hasExtra("author")){
