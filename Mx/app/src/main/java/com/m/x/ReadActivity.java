@@ -48,3 +48,12 @@ public class ReadActivity extends AppCompatActivity {
 		AdRequest adrequest=new AdRequest.Builder().build();
 
 		iad.loadAd(adrequest);
+
+
+        rl = findViewById(R.id.rl);
+		ll = findViewById(R.id.ll2);
+        author_input = findViewById(R.id.author_input2);
+		speak = findViewById( R.id.speak);
+		stop = findViewById(R.id.stop);
+		
+		ll.setVisibility(View.INVISIBLE);
