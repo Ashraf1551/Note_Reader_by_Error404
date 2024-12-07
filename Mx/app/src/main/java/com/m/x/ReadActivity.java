@@ -156,3 +156,17 @@ void getAndSetIntentData(){
         getMenuInflater().inflate(R.menu.update_menu, menu);
         return true;
     }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int i = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (i == R.id.update) {
+			if(iad.isLoaded()) {
+				iad.show();
+			}
