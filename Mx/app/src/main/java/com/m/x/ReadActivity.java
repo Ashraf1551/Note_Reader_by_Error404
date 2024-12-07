@@ -189,3 +189,16 @@ void getAndSetIntentData(){
 		// TODO: Implement this method
 		super.onResume();
 	}
+
+
+    @Override
+	protected void onPause()
+	{
+		// TODO: Implement this method
+		super.onPause();
+		tts.stop();
+		ll.setVisibility(View.INVISIBLE);
+		author_input.setEnabled(true);
+		speak.setEnabled(true);
+	}
+}
