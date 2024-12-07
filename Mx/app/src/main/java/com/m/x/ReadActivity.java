@@ -90,3 +90,17 @@ public class ReadActivity extends AppCompatActivity {
                 speak.setEnabled(false);
             }
         });
+
+
+
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tts.stop();
+                ll.setVisibility(View.INVISIBLE);
+                author_input.setEnabled(true);
+                speak.setEnabled(true);
+            }
+        });
+
+}
