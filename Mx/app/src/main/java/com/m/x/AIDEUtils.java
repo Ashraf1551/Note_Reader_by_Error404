@@ -1,3 +1,14 @@
+package com.m.x;
+
+import android.content.*;
+import android.net.*;
+import android.view.*;
+import android.widget.*;
+import java.io.*;
+
+import android.app.ActivityManager;
+import java.net.URLConnection;
+import java.text.DecimalFormat;
 public class AIDEUtils {
     
     private static Context c;
