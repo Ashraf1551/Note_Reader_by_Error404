@@ -97,3 +97,12 @@ public class MainActivity extends AppCompatActivity {
 					finish();
 				}
 			});
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialogInterface, int i) {
+
+				}
+			});
+        builder.create().show();
+    }
+}
