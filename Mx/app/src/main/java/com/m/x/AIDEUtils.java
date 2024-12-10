@@ -35,3 +35,12 @@ public class AIDEUtils {
 			return false;  
 		}  
 	}
+    //Write an exception to local storage. It can be used for debugging, but only if you catch an exception
+	//requires access to external storage
+	public static void writeLogToLocal(Exception e){
+		StringWriter sw = new StringWriter();
+		PrintWriter pw = new PrintWriter(sw);
+		e.printStackTrace(pw);
+		String text = sw.toString();
+		FileUtil.writeFile(FileUtil.getExternalStorageDir() + "/log.txt", text);
+	}
