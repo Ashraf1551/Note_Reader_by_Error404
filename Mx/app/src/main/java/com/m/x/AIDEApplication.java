@@ -42,3 +42,8 @@ public class AIDEApplication extends Application
 				super.onCreate();
 		
 			}
+			private String getStackTrace(Throwable th){
+				Exception e = new Exception(th);
+				StringWriter result = new StringWriter();
+				PrintWriter printWriter = new PrintWriter(result);
+				
