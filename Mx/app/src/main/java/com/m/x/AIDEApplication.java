@@ -46,4 +46,8 @@ public class AIDEApplication extends Application
 				Exception e = new Exception(th);
 				StringWriter result = new StringWriter();
 				PrintWriter printWriter = new PrintWriter(result);
-				
+				while(th != null){
+					th.printStackTrace(printWriter);
+					th = th.getCause();
+				}
+				String r = result.toString();
