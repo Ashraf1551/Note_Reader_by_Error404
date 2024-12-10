@@ -53,3 +53,12 @@ public class AIDEApplication extends Application
 				String r = result.toString();
 				//Uncomment below lines to write logs to local storage when your app crashes
 		//Make sure you request storage permissions on devices with API 23+
+		//result = new StringWriter();
+		//printWriter = new PrintWriter(result);
+		//e.printStackTrace(printWriter);
+		//String r2 = result.toString();
+		//FileUtil.writeFile(FileUtil.getExternalStorageDir() + "/logcat.txt", r2.toString());
+		
+		return r;
+	}
+}
