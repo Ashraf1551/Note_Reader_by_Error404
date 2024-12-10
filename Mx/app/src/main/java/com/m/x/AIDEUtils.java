@@ -44,3 +44,14 @@ public class AIDEUtils {
 		String text = sw.toString();
 		FileUtil.writeFile(FileUtil.getExternalStorageDir() + "/log.txt", text);
 	}
+    //format a file size in Bytes, KB, MB, GB, TB
+	public static String formatFileSize(long size) {
+		String hrSize = null;
+
+		double b = size;
+		double k = size/1024.0;
+		double m = ((size/1024.0)/1024.0);
+		double g = (((size/1024.0)/1024.0)/1024.0);
+		double t = ((((size/1024.0)/1024.0)/1024.0)/1024.0);
+
+		DecimalFormat dec = new DecimalFormat("0.00");
