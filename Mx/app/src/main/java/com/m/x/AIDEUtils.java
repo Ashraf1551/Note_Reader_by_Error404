@@ -18,3 +18,20 @@ public class AIDEUtils {
     public static void toastLong(String msg){
         Toast.makeText(c, msg, Toast.LENGTH_LONG).show();
     }
+     //Check if user has an active network connection
+     public static boolean isNetworkConnected(){
+		ConnectivityManager connectivityManager 
+			= (ConnectivityManager) c.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+		return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+	}
+	
+	//check if a string contains only numbers
+	public static boolean isNumeric(String str) { 
+		try {  
+			Double.parseDouble(str);  
+			return true;
+		} catch(NumberFormatException e){  
+			return false;  
+		}  
+	}
