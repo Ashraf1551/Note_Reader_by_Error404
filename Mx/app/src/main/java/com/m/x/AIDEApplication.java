@@ -51,3 +51,5 @@ public class AIDEApplication extends Application
 					th = th.getCause();
 				}
 				String r = result.toString();
+				//Uncomment below lines to write logs to local storage when your app crashes
+		//Make sure you request storage permissions on devices with API 23+
