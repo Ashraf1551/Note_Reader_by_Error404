@@ -53,3 +53,18 @@ public class MainActivity extends AppCompatActivity {
             recreate();
         }
     }
+    void storeDataInArrays(){
+        Cursor cursor = myDB.readAllData();
+        if(cursor.getCount() == 0){
+            empty_imageview.setVisibility(View.VISIBLE);
+            no_data.setVisibility(View.VISIBLE);
+        }else{
+            while (cursor.moveToNext()){
+                book_id.add(cursor.getString(0));
+                book_title.add(cursor.getString(1));
+                book_author.add(cursor.getString(2));
+            }
+            empty_imageview.setVisibility(View.GONE);
+            no_data.setVisibility(View.GONE);
+        }
+    }
