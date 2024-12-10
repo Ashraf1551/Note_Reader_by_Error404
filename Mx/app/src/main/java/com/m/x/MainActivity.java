@@ -34,3 +34,15 @@ public class MainActivity extends AppCompatActivity {
 					startActivityForResult(intent, 1);
 				}
 			});
+            myDB = new DatabaseHelper(MainActivity.this);
+        book_id = new ArrayList<>();
+        book_title = new ArrayList<>();
+        book_author = new ArrayList<>();
+
+        storeDataInArrays();
+
+        customAdapter = new CustomAdapter(MainActivity.this,this, book_id, book_title, book_author);
+        recyclerView.setAdapter(customAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+
+    }
