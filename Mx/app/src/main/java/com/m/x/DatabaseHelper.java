@@ -40,7 +40,7 @@ class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
-}
+
     void addBook(String title, String author){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -55,4 +55,5 @@ class DatabaseHelper extends SQLiteOpenHelper {
             Toast.makeText(context, "Added Successfully!", Toast.LENGTH_SHORT).show();
         }
     }
+}
 
