@@ -23,3 +23,14 @@ public class MainActivity extends AppCompatActivity {
 		bad=findViewById(R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().build();
 		bad.loadAd(adRequest);
+        recyclerView = findViewById(R.id.recyclerView);
+        add_button = findViewById(R.id.add_button);
+        empty_imageview = findViewById(R.id.empty_imageview);
+        no_data = findViewById(R.id.no_data);
+        add_button.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					Intent intent = new Intent(MainActivity.this, AddActivity.class);
+					startActivityForResult(intent, 1);
+				}
+			});
